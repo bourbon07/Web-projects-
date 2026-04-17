@@ -1,59 +1,111 @@
-<p align="center"><a href="https://laravel.com" target="_blank"><img src="https://raw.githubusercontent.com/laravel/art/master/logo-lockup/5%20SVG/2%20CMYK/1%20Full%20Color/laravel-logolockup-cmyk-red.svg" width="400" alt="Laravel Logo"></a></p>
+# 🍰 Enjoy Plus (Sweets Store)
+
+[![Laravel](https://img.shields.io/badge/Laravel-11.x-red.svg)](https://laravel.com)
+[![React](https://img.shields.io/badge/React-18.x-blue.svg)](https://reactjs.org)
+[![TailwindCSS](https://img.shields.io/badge/TailwindCSS-3.x-cyan.svg)](https://tailwindcss.com)
+[![AI Powered](https://img.shields.io/badge/AI-Flowise-purple.svg)](https://flowiseai.com)
+
+**Enjoy Plus** is a premium E-commerce destination for baking enthusiasts and sweets lovers. It offers a specialized selection of professional tools, high-quality ingredients, and curated baking kits, all integrated with an advanced AI shopping assistant.
+
+---
+
+## 🎂 Discover the Sweetest Experience
 
 <p align="center">
-<a href="https://github.com/laravel/framework/actions"><img src="https://github.com/laravel/framework/workflows/tests/badge.svg" alt="Build Status"></a>
-<a href="https://packagist.org/packages/laravel/framework"><img src="https://img.shields.io/packagist/dt/laravel/framework" alt="Total Downloads"></a>
-<a href="https://packagist.org/packages/laravel/framework"><img src="https://img.shields.io/packagist/v/laravel/framework" alt="Latest Stable Version"></a>
-<a href="https://packagist.org/packages/laravel/framework"><img src="https://img.shields.io/packagist/l/laravel/framework" alt="License"></a>
+  <img src="./screenshots/Home%20page.png" width="100%" alt="Home Page">
 </p>
 
-## About Laravel
+### 🌟 Exclusive Features
 
-Laravel is a web application framework with expressive, elegant syntax. We believe development must be an enjoyable and creative experience to be truly fulfilling. Laravel takes the pain out of development by easing common tasks used in many web projects, such as:
+- **🤖 Shehab AI Assistant**: A custom AI-powered chatbot (integrated via Flowise) to help users find the perfect products and recipes.
+- **🧁 Baking Packages**: Specially curated kits for starters and professionals (Cake Decorator Kit, Chocolate Lover's Bundle).
+- **🛒 Seamless Commerce**:
+  - Advanced cart system with real-time updates.
+  - Wishlist functionality for future inspirations.
+  - Streamlined Checkout process with multiple payment options.
+- **🌍 Full Bilingual Experience**: Tailored shopping in both Arabic and English.
+- **🌗 Aesthetic Themes**: Elegantly designed Light and Dark modes.
+- **🎭 Modern UI/UX**: Built with React and Radix UI for smooth, interactive components and premium feel.
+- **🎨 Brand Integration**: Filter and find products by your favorite professional baking brands.
 
-- [Simple, fast routing engine](https://laravel.com/docs/routing).
-- [Powerful dependency injection container](https://laravel.com/docs/container).
-- Multiple back-ends for [session](https://laravel.com/docs/session) and [cache](https://laravel.com/docs/cache) storage.
-- Expressive, intuitive [database ORM](https://laravel.com/docs/eloquent).
-- Database agnostic [schema migrations](https://laravel.com/docs/migrations).
-- [Robust background job processing](https://laravel.com/docs/queues).
-- [Real-time event broadcasting](https://laravel.com/docs/broadcasting).
+---
 
-Laravel is accessible, powerful, and provides tools required for large, robust applications.
+## 📸 Interface Showcase
 
-## Learning Laravel
+| Dark Mode Experience | Bundle Packages |
+|:---:|:---:|
+| <img src="./screenshots/English%20and%20dark%20mode.png" width="400"> | <img src="./screenshots/Pakcage%20page.png" width="400"> |
 
-Laravel has the most extensive and thorough [documentation](https://laravel.com/docs) and video tutorial library of all modern web application frameworks, making it a breeze to get started with the framework. You can also check out [Laravel Learn](https://laravel.com/learn), where you will be guided through building a modern Laravel application.
+| Cart & Shopping | AI Assistance |
+|:---:|:---:|
+| <img src="./screenshots/Cart%20.png" width="400"> | <img src="./screenshots/Shehab%20AI%20assistance.png" width="400"> |
 
-If you don't feel like reading, [Laracasts](https://laracasts.com) can help. Laracasts contains thousands of video tutorials on a range of topics including Laravel, modern PHP, unit testing, and JavaScript. Boost your skills by digging into our comprehensive video library.
+| Wishlist | Secure Login |
+|:---:|:---:|
+| <img src="./screenshots/Wish%20List%20page.png" width="400"> | <img src="./screenshots/Login%20page.png" width="400"> |
 
-## Laravel Sponsors
+---
 
-We would like to extend our thanks to the following sponsors for funding Laravel development. If you are interested in becoming a sponsor, please visit the [Laravel Partners program](https://partners.laravel.com).
+## 🛠️ Technology Stack
 
-### Premium Partners
+- **Backend**: Laravel 11 (API-driven)
+- **Frontend**: React 18, Vite
+- **AI Engine**: Flowise AI Integration (Custom Chatbot)
+- **Styling**: TailwindCSS & Material UI
+- **Database**: MySQL / MariaDB (Optimized for performance)
+- **Animations**: Framer Motion for premium transitions
 
-- **[Vehikl](https://vehikl.com)**
-- **[Tighten Co.](https://tighten.co)**
-- **[Kirschbaum Development Group](https://kirschbaumdevelopment.com)**
-- **[64 Robots](https://64robots.com)**
-- **[Curotec](https://www.curotec.com/services/technologies/laravel)**
-- **[DevSquad](https://devsquad.com/hire-laravel-developers)**
-- **[Redberry](https://redberry.international/laravel-development)**
-- **[Active Logic](https://activelogic.com)**
+---
 
-## Contributing
+## 🚀 Installation & Setup
 
-Thank you for considering contributing to the Laravel framework! The contribution guide can be found in the [Laravel documentation](https://laravel.com/docs/contributions).
+### Requirements
 
-## Code of Conduct
+- PHP 8.2+
+- Node.js 18+
+- Composer
+- MySQL/MariaDB
 
-In order to ensure that the Laravel community is welcoming to all, please review and abide by the [Code of Conduct](https://laravel.com/docs/contributions#code-of-conduct).
+### Setup Instructions
 
-## Security Vulnerabilities
+1. **Clone & Enter**:
+   ```bash
+   git clone https://github.com/bourbon07/Web-projects-.git
+   cd "Sweets store"
+   ```
 
-If you discover a security vulnerability within Laravel, please send an e-mail to Taylor Otwell via [taylor@laravel.com](mailto:taylor@laravel.com). All security vulnerabilities will be promptly addressed.
+2. **Backend Setup**:
+   ```bash
+   composer install
+   cp .env.example .env
+   php artisan key:generate
+   php artisan migrate --seed
+   ```
 
-## License
+3. **Frontend Setup**:
+   ```bash
+   npm install
+   npm run build
+   ```
 
-The Laravel framework is open-sourced software licensed under the [MIT license](https://opensource.org/licenses/MIT).
+4. **Environment Configuration**:
+   Ensure your `.env` contains the required AI and Google credentials:
+   - `FLOWISE_CHAT_URL`
+   - `GOOGLE_CLIENT_ID` (for Social Login)
+
+5. **Start Servers**:
+   ```bash
+   php artisan serve
+   # In another terminal
+   npm run dev
+   ```
+
+---
+
+## 📄 License
+
+This project is licensed under the MIT License.
+
+---
+
+<p align="center"> Crafting sweetness with <b>Enjoy Plus</b> </p>

@@ -17,14 +17,38 @@ class ProductSeeder extends Seeder
 
         // Create products (32 total)
         $productNames = [
-            'Wireless Headphones', 'Smart Watch', 'Laptop Stand', 'USB-C Cable',
-            'Phone Case', 'Wireless Mouse', 'Keyboard', 'Monitor Stand',
-            'Desk Lamp', 'Webcam', 'Microphone', 'Speaker',
-            'Tablet Stand', 'Charging Pad', 'Cable Organizer', 'Desk Mat',
-            'Laptop Bag', 'Backpack', 'Water Bottle', 'Coffee Mug',
-            'Notebook', 'Pen Set', 'Sticky Notes', 'File Organizer',
-            'Desk Fan', 'Air Purifier', 'Plant Pot', 'Wall Clock',
-            'Photo Frame', 'Desk Calendar', 'Bookend', 'Desk Organizer',
+            'Wireless Headphones',
+            'Smart Watch',
+            'Laptop Stand',
+            'USB-C Cable',
+            'Phone Case',
+            'Wireless Mouse',
+            'Keyboard',
+            'Monitor Stand',
+            'Desk Lamp',
+            'Webcam',
+            'Microphone',
+            'Speaker',
+            'Tablet Stand',
+            'Charging Pad',
+            'Cable Organizer',
+            'Desk Mat',
+            'Laptop Bag',
+            'Backpack',
+            'Water Bottle',
+            'Coffee Mug',
+            'Notebook',
+            'Pen Set',
+            'Sticky Notes',
+            'File Organizer',
+            'Desk Fan',
+            'Air Purifier',
+            'Plant Pot',
+            'Wall Clock',
+            'Photo Frame',
+            'Desk Calendar',
+            'Bookend',
+            'Desk Organizer',
         ];
 
         $descriptions = [
@@ -38,23 +62,23 @@ class ProductSeeder extends Seeder
 
         for ($i = 0; $i < 32; $i++) {
             $imageIndex = ($i % count($images));
-                $imageUrl = $images[$imageIndex]['url'] ?? null;
+            $imageUrl = $images[$imageIndex]['url'] ?? null;
             $descriptionIndex = $i % count($descriptions);
 
-                Product::firstOrCreate(
-                    [
+            Product::firstOrCreate(
+                [
                     'slug' => Str::slug($productNames[$i] . '-' . $i),
-                    ],
-                    [
+                ],
+                [
                     'name' => $productNames[$i],
                     'description' => $descriptions[$descriptionIndex],
-                        'price' => $prices[array_rand($prices)],
-                        'stock' => rand(10, 100),
-                        'is_active' => true,
+                    'price' => $prices[array_rand($prices)],
+                    'stock' => rand(10, 100),
+                    'is_active' => true,
                     'seller_id' => null,
-                        'image_url' => $imageUrl,
-                    ]
-                );
+                    'image_url' => $imageUrl,
+                ]
+            );
         }
     }
 
@@ -68,20 +92,20 @@ class ProductSeeder extends Seeder
             // Get Cloudinary configuration - prefer CLOUDINARY_URL, fallback to individual vars
             $cloudinaryUrl = env('CLOUDINARY_URL');
             $config = $cloudinaryUrl;
-            
+
             if (!$config) {
                 // Fallback to individual environment variables
                 $cloudName = env('CLOUDINARY_CLOUD_NAME');
                 $apiKey = env('CLOUDINARY_API_KEY');
                 $apiSecret = env('CLOUDINARY_API_SECRET');
-                
+
                 if ($cloudName && $apiKey && $apiSecret) {
                     $config = [
-                'cloud' => [
+                        'cloud' => [
                             'cloud_name' => $cloudName,
                             'api_key' => $apiKey,
                             'api_secret' => $apiSecret,
-                ],
+                        ],
                     ];
                 } else {
                     return array_fill(0, 32, ['url' => 'https://via.placeholder.com/400']);

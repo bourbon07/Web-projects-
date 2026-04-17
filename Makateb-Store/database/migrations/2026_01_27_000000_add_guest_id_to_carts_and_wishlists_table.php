@@ -21,7 +21,7 @@ return new class extends Migration
         });
 
         // Make user_id nullable in carts
-        DB::statement('ALTER TABLE `carts` MODIFY `user_id` BIGINT UNSIGNED NULL');
+        // DB::statement('ALTER TABLE `carts` MODIFY `user_id` BIGINT UNSIGNED NULL');
 
         // Add unique constraints for guest items in carts
         // Note: We use raw SQL to avoid issues if indexes already exist or with distinct naming
@@ -54,7 +54,7 @@ return new class extends Migration
         });
 
         // Make user_id nullable in wishlists
-        DB::statement('ALTER TABLE `wishlists` MODIFY `user_id` BIGINT UNSIGNED NULL');
+        // DB::statement('ALTER TABLE `wishlists` MODIFY `user_id` BIGINT UNSIGNED NULL');
         
         // Add unique constraints for guest items in wishlists
         try {

@@ -25,13 +25,22 @@ return new class extends Migration
 
         // Migrate existing category_id data to pivot table
         // Only migrate products that have a category_id set
-        DB::statement('
-            INSERT INTO category_product (category_id, product_id, created_at, updated_at)
-            SELECT category_id, id, NOW(), NOW()
-            FROM products
-            WHERE category_id IS NOT NULL
-            ON DUPLICATE KEY UPDATE updated_at = NOW()
-        ');
+        if (DB::getDriverName() === 'sqlite') {
+            DB::statement("
+                INSERT OR IGNORE INTO category_product (category_id, product_id, created_at, updated_at)
+                SELECT category_id, id, datetime('now'), datetime('now')
+                FROM products
+                WHERE category_id IS NOT NULL
+            ");
+        } else {
+            DB::statement('
+                INSERT INTO category_product (category_id, product_id, created_at, updated_at)
+                SELECT category_id, id, NOW(), NOW()
+                FROM products
+                WHERE category_id IS NOT NULL
+                ON DUPLICATE KEY UPDATE updated_at = NOW()
+            ');
+        }
     }
 
     /**

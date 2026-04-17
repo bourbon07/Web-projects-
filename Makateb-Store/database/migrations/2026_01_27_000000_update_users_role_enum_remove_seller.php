@@ -20,8 +20,10 @@ return new class extends Migration
             ->update(['role' => 'customer']);
 
         // Update the enum column to remove 'seller'
-        // Note: MySQL/MariaDB requires using raw SQL to modify enum columns
-        DB::statement("ALTER TABLE users MODIFY COLUMN role ENUM('customer', 'admin') DEFAULT 'customer'");
+        // SQLite doesn't support ENUM or ALTER TABLE MODIFY COLUMN, so skip on SQLite
+        if (DB::getDriverName() !== 'sqlite') {
+            DB::statement("ALTER TABLE users MODIFY COLUMN role ENUM('customer', 'admin') DEFAULT 'customer'");
+        }
     }
 
     /**
@@ -29,8 +31,8 @@ return new class extends Migration
      */
     public function down(): void
     {
-        // Restore the enum to include 'seller'
-        DB::statement("ALTER TABLE users MODIFY COLUMN role ENUM('customer', 'seller', 'admin') DEFAULT 'customer'");
+        if (DB::getDriverName() !== 'sqlite') {
+            DB::statement("ALTER TABLE users MODIFY COLUMN role ENUM('customer', 'seller', 'admin') DEFAULT 'customer'");
+        }
     }
 };
-

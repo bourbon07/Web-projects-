@@ -4,8 +4,7 @@ use Illuminate\Database\Migrations\Migration;
 use Illuminate\Database\Schema\Blueprint;
 use Illuminate\Support\Facades\Schema;
 
-return new class extends Migration
-{
+return new class extends Migration {
     /**
      * Run the migrations.
      */
@@ -27,11 +26,11 @@ return new class extends Migration
                 // Foreign key might not exist or have different name, continue
             }
         }
-        
+
         // Use raw SQL to modify the column to be nullable
         // This is more reliable than using Schema::table with change()
         \DB::statement('ALTER TABLE `products` MODIFY COLUMN `category_id` BIGINT UNSIGNED NULL');
-        
+
         // Re-add foreign key constraint with set null on delete
         Schema::table('products', function (Blueprint $table) {
             $table->foreign('category_id')->references('id')->on('categories')->onDelete('set null');
@@ -51,7 +50,7 @@ return new class extends Migration
                 // Foreign key might not exist, continue
             }
         });
-        
+
         Schema::table('products', function (Blueprint $table) {
             // Make category_id required again (but only if all products have a category)
             // For safety, we'll keep it nullable in the down migration
