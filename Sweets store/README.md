@@ -44,7 +44,7 @@
 
 | Admin Dashboard | Wishlist |
 |:---:|:---:|
-| *Modern Control Panel* | <img src="./screenshots/Wish%20List%20page.png" width="400"> |
+| <img src="./screenshots/admin%20dashboard.png" width="400"> | <img src="./screenshots/Wish%20List%20page.png" width="400"> |
 
 ---
 
