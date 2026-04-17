@@ -1,0 +1,83 @@
+/* Almarai Font - Local TTF Files */
+@font-face {
+  font-family: 'Almarai';
+  src: url('/fonts/Almarai-Light.ttf') format('truetype');
+  font-weight: 300;
+  font-style: normal;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: 'Almarai';
+  src: url('/fonts/Almarai-Regular.ttf') format('truetype');
+  font-weight: 400;
+  font-style: normal;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: 'Almarai';
+  src: url('/fonts/Almarai-Bold.ttf') format('truetype');
+  font-weight: 700;
+  font-style: normal;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: 'Almarai';
+  src: url('/fonts/Almarai-ExtraBold.ttf') format('truetype');
+  font-weight: 800;
+  font-style: normal;
+  font-display: swap;
+}
+
+/* Almarai CSS Utility Classes */
+.almarai-light {
+  font-family: "Almarai", sans-serif;
+  font-weight: 300;
+  font-style: normal;
+}
+
+.almarai-regular {
+  font-family: "Almarai", sans-serif;
+  font-weight: 400;
+  font-style: normal;
+}
+
+.almarai-bold {
+  font-family: "Almarai", sans-serif;
+  font-weight: 700;
+  font-style: normal;
+}
+
+.almarai-extrabold {
+  font-family: "Almarai", sans-serif;
+  font-weight: 800;
+  font-style: normal;
+}
+
+/* Almarai Tailwind Utilities */
+.font-almarai {
+  font-family: 'Almarai', sans-serif;
+}
+
+.font-almarai-light {
+  font-family: 'Almarai', sans-serif;
+  font-weight: 300;
+}
+
+.font-almarai-regular {
+  font-family: 'Almarai', sans-serif;
+  font-weight: 400;
+}
+
+.font-almarai-bold {
+  font-family: 'Almarai', sans-serif;
+  font-weight: 700;
+}
+
+.font-almarai-extrabold {
+  font-family: 'Almarai', sans-serif;
+  font-weight: 800;
+}
+
