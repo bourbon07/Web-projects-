@@ -1,0 +1,543 @@
+<html lang="en" dir="ltr"><head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Enjoy Plus - Premium Baking Supplies</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script src="https://code.iconify.design/iconify-icon/1.0.7/iconify-icon.min.js"></script>
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600&family=Noto+Kufi+Arabic:wght@400;500;600&display=swap');
+        
+        body {
+            font-family: 'Inter', 'Noto Kufi Arabic', sans-serif;
+            /* Draggable handle cursor for AI bot */
+            .cursor-grab { cursor: grab; }
+            .cursor-grab:active { cursor: grabbing; }
+        }
+        
+        /* Hide scrollbar for clean horizontal scrolls */
+        .no-scrollbar::-webkit-scrollbar { display: none; }
+        .no-scrollbar { -ms-overflow-style: none; scrollbar-width: none; }
+    </style>
+</head>
+<body class="bg-white text-neutral-900 antialiased selection:bg-red-100 selection:text-red-900 flex flex-col min-h-screen">
+
+    <!-- DYNAMIC HEADER -->
+    <header class="sticky top-0 z-40 w-full backdrop-blur-xl bg-white/80 border-b border-pink-100">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 h-16 flex items-center justify-between gap-4">
+            
+            <!-- Logo -->
+            <div class="flex-shrink-0 flex items-center gap-2">
+                <a href="#" class="text-xl tracking-tight font-semibold text-red-600 uppercase flex items-center gap-1">
+                    <iconify-icon icon="solar:chef-hat-linear" class="text-2xl" stroke-width="1.5"></iconify-icon>
+                    ENJOY PLUS
+                </a>
+            </div>
+
+            <!-- Search Bar -->
+            <div class="flex-1 max-w-xl hidden md:block">
+                <div class="relative group">
+                    <iconify-icon icon="solar:magnifer-linear" class="absolute left-3 top-1/2 -translate-y-1/2 text-neutral-400 group-focus-within:text-red-500 transition-colors" stroke-width="1.5"></iconify-icon>
+                    <input type="text" placeholder="ابحث عن أدوات ومكونات الخبز... (Search baking supplies...)" class="w-full bg-pink-50/50 border border-pink-100 rounded-full pl-10 pr-4 py-2 text-sm focus:bg-white focus:border-red-400 focus:ring-1 focus:ring-red-400 focus:outline-none transition-all placeholder:text-neutral-400">
+                </div>
+            </div>
+
+            <!-- Actions -->
+            <div class="flex gap-5 gap-x-5 gap-y-5 items-center">
+                <!-- Language Toggle (Arabic First) -->
+                <button class="hidden sm:flex items-center gap-1 text-sm font-medium text-neutral-600 hover:text-red-600 transition-colors">
+                    <iconify-icon icon="solar:global-linear" stroke-width="1.5" class=""></iconify-icon>
+                    العربية
+                </button>
+
+                <div class="h-4 w-px bg-pink-200 hidden sm:block"></div>
+
+                <!-- Wishlist -->
+                <button class="relative text-neutral-600 hover:text-red-600 transition-colors">
+                    <iconify-icon icon="solar:heart-linear" class="text-2xl" stroke-width="1.5"></iconify-icon>
+                    <span class="absolute -top-1.5 -right-1.5 bg-red-600 text-white text-xs min-w-[1.25rem] h-5 flex items-center justify-center rounded-full px-1 font-medium ring-2 ring-white">2</span>
+                </button>
+
+                <!-- Cart -->
+                <button class="relative text-neutral-600 hover:text-red-600 transition-colors">
+                    <iconify-icon icon="solar:cart-large-linear" class="text-2xl" stroke-width="1.5"></iconify-icon>
+                    <span class="absolute -top-1.5 -right-1.5 bg-red-600 text-white text-xs min-w-[1.25rem] h-5 flex items-center justify-center rounded-full px-1 font-medium ring-2 ring-white">1</span>
+                </button>
+
+                <!-- Profile -->
+                <button class="w-8 h-8 rounded-full bg-pink-100 flex items-center justify-center text-red-600 border border-pink-200 hover:bg-pink-200 transition-colors">
+                    <iconify-icon icon="solar:user-rounded-linear" stroke-width="1.5"></iconify-icon>
+                </button>
+            </div>
+        </div>
+    </header>
+
+    <main class="flex-1">
+        <!-- HERO SECTION -->
+        <section class="relative bg-pink-50 overflow-hidden">
+            <div class="sm:px-6 lg:px-8 lg:py-32 flex flex-col md:flex-row max-w-7xl mr-auto ml-auto pt-20 pr-4 pb-20 pl-4 gap-x-12 gap-y-12 items-center">
+                <div class="flex-1 space-y-6 text-center md:text-left z-10">
+                    <span class="inline-flex items-center gap-2 px-3 py-1 rounded-full bg-white border border-pink-200 text-xs font-medium text-red-600">
+                        <iconify-icon icon="solar:star-fall-linear"></iconify-icon>
+                        New Pastry Collection
+                    </span>
+                    <h1 class="text-4xl md:text-5xl lg:text-6xl tracking-tight font-semibold text-neutral-900 leading-tight">
+                        Elevate your <br><span class="text-red-600">baking creations.</span>
+                    </h1>
+                    <p class="text-lg text-neutral-600 max-w-lg mx-auto md:mx-0">
+                        Discover premium ingredients, professional tools, and exclusive bundled packages for pastry chefs and enthusiasts.
+                    </p>
+                    <div class="flex items-center justify-center md:justify-start gap-4 pt-4">
+                        <button class="bg-red-600 hover:bg-red-700 text-white px-6 py-3 rounded-full text-sm font-medium transition-colors shadow-sm">
+                            Shop Catalog
+                        </button>
+                        <button class="bg-white hover:bg-pink-50 border border-pink-200 text-neutral-900 px-6 py-3 rounded-full text-sm font-medium transition-colors shadow-sm">
+                            View Bundles
+                        </button>
+                    </div>
+                </div>
+                <div class="flex-1 relative w-full max-w-md mx-auto aspect-square bg-white rounded-3xl shadow-xl border border-pink-100 flex items-center justify-center overflow-hidden">
+                    <!-- Placeholder for Hero Image -->
+                    <div class="absolute inset-0 bg-gradient-to-tr from-pink-100 to-white opacity-50"></div>
+                    <iconify-icon icon="solar:pie-linear" class="text-[8rem] text-red-100"></iconify-icon>
+                </div>
+            </div>
+        </section>
+
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-16 space-y-24">
+            
+            <!-- MANUFACTURERS / BRANDS -->
+            <section class="space-y-6">
+                <div class="flex items-center justify-between">
+                    <h2 class="text-2xl tracking-tight font-semibold">Top Brands <span class="text-neutral-400 font-normal text-lg ml-2">العلامات التجارية</span></h2>
+                    <a href="#" class="text-sm font-medium text-red-600 hover:underline">View all</a>
+                </div>
+                <div class="flex gap-4 overflow-x-auto no-scrollbar pb-4">
+                    <!-- Brand Cards -->
+                    <div class="min-w-[120px] aspect-square rounded-2xl border border-pink-100 bg-white flex flex-col items-center justify-center gap-2 hover:border-red-300 transition-colors cursor-pointer group">
+                        <div class="w-12 h-12 rounded-full bg-pink-50 text-red-500 flex items-center justify-center group-hover:scale-110 transition-transform"><iconify-icon icon="solar:box-linear" class="text-2xl"></iconify-icon></div>
+                        <span class="text-sm font-medium">BakePro</span>
+                    </div>
+                    <div class="min-w-[120px] aspect-square rounded-2xl border border-pink-100 bg-white flex flex-col items-center justify-center gap-2 hover:border-red-300 transition-colors cursor-pointer group">
+                        <div class="w-12 h-12 rounded-full bg-pink-50 text-red-500 flex items-center justify-center group-hover:scale-110 transition-transform"><iconify-icon icon="solar:cup-linear" class="text-2xl"></iconify-icon></div>
+                        <span class="text-sm font-medium">SweetLife</span>
+                    </div>
+                    <div class="min-w-[120px] aspect-square rounded-2xl border border-pink-100 bg-white flex flex-col items-center justify-center gap-2 hover:border-red-300 transition-colors cursor-pointer group">
+                        <div class="w-12 h-12 rounded-full bg-pink-50 text-red-500 flex items-center justify-center group-hover:scale-110 transition-transform"><iconify-icon icon="solar:leaf-linear" class="text-2xl"></iconify-icon></div>
+                        <span class="text-sm font-medium">Natura</span>
+                    </div>
+                    <div class="min-w-[120px] aspect-square rounded-2xl border border-pink-100 bg-white flex flex-col items-center justify-center gap-2 hover:border-red-300 transition-colors cursor-pointer group">
+                        <div class="w-12 h-12 rounded-full bg-pink-50 text-red-500 flex items-center justify-center group-hover:scale-110 transition-transform"><iconify-icon icon="solar:crown-linear" class="text-2xl"></iconify-icon></div>
+                        <span class="text-sm font-medium">RoyalMix</span>
+                    </div>
+                </div>
+            </section>
+
+            <!-- BUNDLED PACKAGES -->
+            <section class="bg-white border border-pink-100 rounded-3xl p-8 relative overflow-hidden shadow-sm">
+                <div class="absolute top-0 right-0 w-64 h-64 bg-pink-50 rounded-full blur-3xl -mr-20 -mt-20"></div>
+                <div class="relative z-10 flex flex-col md:flex-row items-center justify-between gap-8">
+                    <div class="space-y-4 max-w-xl">
+                        <span class="text-xs font-semibold tracking-wider text-red-600 uppercase">Special Offer</span>
+                        <h2 class="text-3xl tracking-tight font-semibold">Starter Baker Bundle</h2>
+                        <p class="text-sm text-neutral-600">Everything you need to start baking like a professional. Includes premium flour, essential tools, and an exclusive recipe book.</p>
+                        <div class="flex items-center gap-4 pt-2">
+                            <span class="text-2xl font-semibold text-neutral-900">$89.99</span>
+                            <span class="text-sm text-neutral-400 line-through">$120.00</span>
+                        </div>
+                        <button class="bg-red-600 hover:bg-red-700 text-white px-6 py-2.5 rounded-full text-sm font-medium transition-colors w-full md:w-auto shadow-sm">
+                            Add Bundle to Cart
+                        </button>
+                    </div>
+                    <div class="w-full md:w-1/2 grid grid-cols-2 gap-4">
+                        <div class="bg-pink-50 aspect-square rounded-2xl flex items-center justify-center"><iconify-icon icon="solar:rolling-pin-linear" class="text-4xl text-red-400"></iconify-icon></div>
+                        <div class="bg-pink-50 aspect-square rounded-2xl flex items-center justify-center"><iconify-icon icon="solar:book-linear" class="text-4xl text-red-400"></iconify-icon></div>
+                    </div>
+                </div>
+            </section>
+
+            <!-- PRODUCT CATALOG -->
+            <section class="space-y-8">
+                <div class="flex flex-col sm:flex-row sm:items-center justify-between gap-4">
+                    <h2 class="text-2xl tracking-tight font-semibold">Latest Products <span class="text-neutral-400 font-normal text-lg ml-2">المنتجات</span></h2>
+                    
+                    <!-- Filters -->
+                    <div class="flex items-center gap-2">
+                        <button class="px-4 py-2 rounded-full border border-pink-200 text-sm font-medium bg-pink-50 text-red-600">All</button>
+                        <button class="px-4 py-2 rounded-full border border-pink-200 text-sm font-medium hover:bg-pink-50 transition-colors">Tools</button>
+                        <button class="px-4 py-2 rounded-full border border-pink-200 text-sm font-medium hover:bg-pink-50 transition-colors">Ingredients</button>
+                    </div>
+                </div>
+
+                <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-6">
+                    <!-- Product Card 1 -->
+                    <div class="group flex flex-col bg-white border border-pink-100 rounded-2xl overflow-hidden hover:shadow-md transition-all duration-300">
+                        <div class="relative aspect-square bg-pink-50/50 flex items-center justify-center p-6">
+                            <button class="absolute top-3 right-3 w-8 h-8 bg-white rounded-full flex items-center justify-center text-neutral-400 hover:text-red-600 hover:bg-pink-50 shadow-sm transition-colors z-10">
+                                <iconify-icon icon="solar:heart-linear" stroke-width="1.5"></iconify-icon>
+                            </button>
+                            <iconify-icon icon="solar:plain-2-linear" class="text-6xl text-red-200 group-hover:scale-110 transition-transform duration-500"></iconify-icon>
+                        </div>
+                        <div class="p-5 flex flex-col flex-1 gap-3">
+                            <div class="space-y-1">
+                                <div class="flex items-center justify-between">
+                                    <span class="text-xs text-neutral-500">BakePro</span>
+                                    <div class="flex items-center text-red-500 text-xs">
+                                        <iconify-icon icon="solar:star-bold"></iconify-icon>
+                                        <iconify-icon icon="solar:star-bold"></iconify-icon>
+                                        <iconify-icon icon="solar:star-bold"></iconify-icon>
+                                        <iconify-icon icon="solar:star-bold"></iconify-icon>
+                                        <iconify-icon icon="solar:star-linear"></iconify-icon>
+                                        <span class="text-neutral-400 ml-1">(24)</span>
+                                    </div>
+                                </div>
+                                <h3 class="font-medium text-neutral-900 leading-tight">Professional Stand Mixer</h3>
+                            </div>
+                            <div class="mt-auto flex items-center justify-between pt-2">
+                                <span class="font-semibold text-lg">$299.00</span>
+                                <button class="w-9 h-9 rounded-full bg-red-50 text-red-600 flex items-center justify-center hover:bg-red-600 hover:text-white transition-colors">
+                                    <iconify-icon icon="solar:cart-plus-linear" class="text-lg"></iconify-icon>
+                                </button>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Product Card 2 -->
+                    <div class="group flex flex-col bg-white border border-pink-100 rounded-2xl overflow-hidden hover:shadow-md transition-all duration-300">
+                        <div class="relative aspect-square bg-pink-50/50 flex items-center justify-center p-6">
+                            <button class="absolute top-3 right-3 w-8 h-8 bg-white rounded-full flex items-center justify-center text-red-600 shadow-sm transition-colors z-10">
+                                <iconify-icon icon="solar:heart-bold" stroke-width="1.5"></iconify-icon>
+                            </button>
+                            <iconify-icon icon="solar:jar-of-pills-linear" class="text-6xl text-red-200 group-hover:scale-110 transition-transform duration-500"></iconify-icon>
+                        </div>
+                        <div class="p-5 flex flex-col flex-1 gap-3">
+                            <div class="space-y-1">
+                                <div class="flex items-center justify-between">
+                                    <span class="text-xs text-neutral-500">Natura</span>
+                                    <div class="flex items-center text-red-500 text-xs">
+                                        <iconify-icon icon="solar:star-bold"></iconify-icon>
+                                        <iconify-icon icon="solar:star-bold" class=""></iconify-icon>
+                                        <iconify-icon icon="solar:star-bold"></iconify-icon>
+                                        <iconify-icon icon="solar:star-bold"></iconify-icon>
+                                        <iconify-icon icon="solar:star-bold"></iconify-icon>
+                                        <span class="text-neutral-400 ml-1">(128)</span>
+                                    </div>
+                                </div>
+                                <h3 class="font-medium text-neutral-900 leading-tight">Pure Vanilla Extract 8oz</h3>
+                            </div>
+                            <div class="mt-auto flex items-center justify-between pt-2">
+                                <span class="font-semibold text-lg">$24.50</span>
+                                <button class="w-9 h-9 rounded-full bg-red-50 text-red-600 flex items-center justify-center hover:bg-red-600 hover:text-white transition-colors">
+                                    <iconify-icon icon="solar:cart-plus-linear" class="text-lg"></iconify-icon>
+                                </button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </section>
+
+            <!-- USER JOURNEY SECTION (Demonstrating Login & Order History) -->
+            <section class="grid grid-cols-1 lg:grid-cols-2 gap-8 border-t border-pink-100 pt-16">
+                
+                <!-- Login/Signup Component -->
+                <div class="bg-white border border-pink-100 rounded-3xl p-8 shadow-sm">
+                    <h3 class="text-xl tracking-tight font-semibold mb-6">Create Account / Login</h3>
+                    <form class="space-y-4">
+                        <button type="button" class="w-full flex items-center justify-center gap-2 bg-white border border-pink-200 rounded-xl px-4 py-2.5 text-sm font-medium hover:bg-pink-50 transition-colors">
+                            <iconify-icon icon="logos:google-icon"></iconify-icon> Continue with Google
+                        </button>
+                        
+                        <div class="relative flex items-center py-2">
+                            <div class="flex-grow border-t border-pink-100"></div>
+                            <span class="flex-shrink-0 mx-4 text-xs text-neutral-400">or manual entry</span>
+                            <div class="flex-grow border-t border-pink-100"></div>
+                        </div>
+
+                        <div class="grid grid-cols-2 gap-4">
+                            <div class="space-y-1.5">
+                                <label class="text-xs font-medium text-neutral-700">Full Name</label>
+                                <input type="text" class="w-full bg-pink-50/30 border border-pink-100 rounded-lg px-3 py-2 text-sm focus:border-red-400 focus:ring-1 focus:ring-red-400 focus:outline-none" placeholder="John Doe">
+                            </div>
+                            <div class="space-y-1.5">
+                                <label class="text-xs font-medium text-neutral-700">Email</label>
+                                <input type="email" class="w-full bg-pink-50/30 border border-pink-100 rounded-lg px-3 py-2 text-sm focus:border-red-400 focus:ring-1 focus:ring-red-400 focus:outline-none" placeholder="john@example.com">
+                            </div>
+                            <div class="space-y-1.5">
+                                <label class="text-xs font-medium text-neutral-700">Age</label>
+                                <input type="number" class="w-full bg-pink-50/30 border border-pink-100 rounded-lg px-3 py-2 text-sm focus:border-red-400 focus:ring-1 focus:ring-red-400 focus:outline-none" placeholder="25">
+                            </div>
+                            <div class="space-y-1.5">
+                                <label class="text-xs font-medium text-neutral-700">Gender</label>
+                                <select class="w-full bg-pink-50/30 border border-pink-100 rounded-lg px-3 py-2 text-sm focus:border-red-400 focus:ring-1 focus:ring-red-400 focus:outline-none appearance-none">
+                                    <option>Select...</option>
+                                    <option>Male</option>
+                                    <option>Female</option>
+                                </select>
+                            </div>
+                        </div>
+                        <div class="space-y-1.5">
+                            <label class="text-xs font-medium text-neutral-700">Password</label>
+                            <input type="password" class="w-full bg-pink-50/30 border border-pink-100 rounded-lg px-3 py-2 text-sm focus:border-red-400 focus:ring-1 focus:ring-red-400 focus:outline-none" placeholder="••••••••">
+                        </div>
+                        <button type="submit" class="w-full bg-red-600 hover:bg-red-700 text-white rounded-xl px-4 py-2.5 text-sm font-medium transition-colors mt-2">
+                            Sign Up
+                        </button>
+                    </form>
+                    
+                    <div class="mt-8 flex justify-center gap-4">
+                        <a href="#" class="w-10 h-10 rounded-full bg-pink-50 flex items-center justify-center text-red-600 hover:bg-red-600 hover:text-white transition-colors"><iconify-icon icon="mdi:whatsapp" class="text-xl"></iconify-icon></a>
+                        <a href="#" class="w-10 h-10 rounded-full bg-pink-50 flex items-center justify-center text-red-600 hover:bg-red-600 hover:text-white transition-colors"><iconify-icon icon="mdi:instagram" class="text-xl"></iconify-icon></a>
+                    </div>
+                </div>
+
+                <!-- Order History Component -->
+                <div class="bg-white border border-pink-100 rounded-3xl p-8 shadow-sm flex flex-col">
+                    <h3 class="text-xl tracking-tight font-semibold mb-6">Recent Orders</h3>
+                    <div class="flex-1 space-y-4">
+                        <!-- Order Item -->
+                        <div class="border border-pink-100 rounded-2xl p-4 flex flex-col sm:flex-row gap-4 items-start sm:items-center justify-between">
+                            <div class="flex items-center gap-4">
+                                <div class="w-12 h-12 bg-pink-50 rounded-xl flex items-center justify-center text-red-400">
+                                    <iconify-icon icon="solar:box-linear" class="text-2xl"></iconify-icon>
+                                </div>
+                                <div>
+                                    <h4 class="text-sm font-medium text-neutral-900">Order #ORD-8923</h4>
+                                    <p class="text-xs text-neutral-500">Delivered • 2 items • $114.49</p>
+                                </div>
+                            </div>
+                            <button class="w-full sm:w-auto px-4 py-2 bg-white border border-red-200 text-red-600 rounded-full text-xs font-medium hover:bg-red-50 transition-colors flex items-center justify-center gap-2">
+                                <iconify-icon icon="solar:refresh-linear"></iconify-icon> Re-order
+                            </button>
+                        </div>
+                        <!-- Order Item -->
+                        <div class="border border-pink-100 rounded-2xl p-4 flex flex-col sm:flex-row gap-4 items-start sm:items-center justify-between opacity-75">
+                            <div class="flex items-center gap-4">
+                                <div class="w-12 h-12 bg-pink-50 rounded-xl flex items-center justify-center text-red-400">
+                                    <iconify-icon icon="solar:box-linear" class="text-2xl"></iconify-icon>
+                                </div>
+                                <div>
+                                    <h4 class="text-sm font-medium text-neutral-900">Order #ORD-7741</h4>
+                                    <p class="text-xs text-neutral-500">Delivered • 1 item • $24.50</p>
+                                </div>
+                            </div>
+                            <button class="w-full sm:w-auto px-4 py-2 bg-white border border-red-200 text-red-600 rounded-full text-xs font-medium hover:bg-red-50 transition-colors flex items-center justify-center gap-2">
+                                <iconify-icon icon="solar:refresh-linear"></iconify-icon> Re-order
+                            </button>
+                        </div>
+                    </div>
+                </div>
+
+            </section>
+        </div>
+    </main>
+
+
+    <!-- FLOATING AI BOT (SHEHAB) -->
+    <div class="fixed bottom-6 right-6 z-50 flex flex-col items-end gap-4 pointer-events-none">
+        
+        <!-- Chat Interface (Simulated Open State) -->
+        <div class="w-80 bg-white rounded-2xl shadow-2xl border border-pink-100 overflow-hidden flex flex-col pointer-events-auto transform transition-transform origin-bottom-right scale-100">
+            <!-- Header -->
+            <div class="bg-red-600 text-white px-4 py-3 flex items-center justify-between cursor-grab">
+                <div class="flex items-center gap-2">
+                    <iconify-icon icon="solar:star-fall-bold" class="text-xl text-pink-200"></iconify-icon>
+                    <div>
+                        <h4 class="text-sm font-semibold tracking-tight">Shehab AI</h4>
+                        <p class="text-[10px] text-red-100">Baking Assistant</p>
+                    </div>
+                </div>
+                <button class="text-white/80 hover:text-white transition-colors">
+                    <iconify-icon icon="solar:close-circle-linear" class="text-lg"></iconify-icon>
+                </button>
+            </div>
+            
+            <!-- Chat Body -->
+            <div class="h-64 bg-pink-50/30 p-4 overflow-y-auto flex flex-col gap-3 text-sm">
+                <div class="flex gap-2">
+                    <div class="w-6 h-6 rounded-full bg-red-100 text-red-600 flex items-center justify-center flex-shrink-0 mt-1">
+                        <iconify-icon icon="solar:star-fall-bold" class="text-xs"></iconify-icon>
+                    </div>
+                    <div class="bg-white border border-pink-100 p-2.5 rounded-2xl rounded-tl-sm shadow-sm text-neutral-700">
+                        مرحباً! كيف يمكنني مساعدتك في الخبز اليوم؟ <br> (Hello! How can I help you with baking today?)
+                    </div>
+                </div>
+                <div class="flex gap-2 flex-row-reverse">
+                    <div class="bg-red-600 text-white p-2.5 rounded-2xl rounded-tr-sm shadow-sm">
+                        I need a substitute for vanilla extract.
+                    </div>
+                </div>
+                <div class="flex gap-2">
+                    <div class="w-6 h-6 rounded-full bg-red-100 text-red-600 flex items-center justify-center flex-shrink-0 mt-1">
+                        <iconify-icon icon="solar:star-fall-bold" class="text-xs"></iconify-icon>
+                    </div>
+                    <div class="bg-white border border-pink-100 p-2.5 rounded-2xl rounded-tl-sm shadow-sm text-neutral-700">
+                        You can use maple syrup or almond extract! Would you like me to add Almond Extract to your cart?
+                    </div>
+                </div>
+            </div>
+
+            <!-- Input -->
+            <div class="p-3 bg-white border-t border-pink-100">
+                <div class="relative">
+                    <input type="text" placeholder="Type your question..." class="w-full bg-pink-50 border border-pink-100 rounded-full pl-4 pr-10 py-2 text-sm focus:border-red-400 focus:outline-none focus:ring-1 focus:ring-red-400">
+                    <button class="absolute right-2 top-1/2 -translate-y-1/2 w-7 h-7 bg-red-600 text-white rounded-full flex items-center justify-center hover:bg-red-700 transition-colors">
+                        <iconify-icon icon="solar:plain-2-bold" class="text-xs rotate-45"></iconify-icon>
+                    </button>
+                </div>
+            </div>
+        </div>
+
+        <!-- Floating Button -->
+        <button class="w-14 h-14 bg-red-600 rounded-full shadow-xl shadow-red-600/30 flex items-center justify-center text-white hover:scale-105 transition-transform pointer-events-auto group border-2 border-white">
+            <iconify-icon icon="solar:star-fall-bold" class="text-3xl group-hover:animate-pulse"></iconify-icon>
+        </button>
+    </div>
+
+
+    <!-- ADMIN DASHBOARD SEPARATOR -->
+    <div class="w-full h-px bg-gradient-to-r from-transparent via-red-200 to-transparent my-12"></div>
+
+    <!-- ADMIN DASHBOARD -->
+    <section class="bg-pink-50/20 pb-24">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-8">
+            
+            <div class="flex items-center justify-between mb-8">
+                <div>
+                    <h2 class="text-2xl tracking-tight font-semibold text-neutral-900">Admin Dashboard</h2>
+                    <p class="text-sm text-neutral-500">Manage store, orders, and users.</p>
+                </div>
+                <div class="flex items-center gap-3">
+                    <span class="text-sm font-medium bg-red-100 text-red-700 px-3 py-1 rounded-full">Admin Mode</span>
+                </div>
+            </div>
+
+            <div class="flex flex-col md:flex-row gap-8">
+                
+                <!-- Sidebar Nav -->
+                <nav class="w-full md:w-64 flex-shrink-0 space-y-1">
+                    <a href="#" class="flex items-center gap-3 px-4 py-2.5 bg-red-50 text-red-600 rounded-xl text-sm font-medium transition-colors">
+                        <iconify-icon icon="solar:widget-5-linear" class="text-lg"></iconify-icon> Overview
+                    </a>
+                    <a href="#" class="flex items-center gap-3 px-4 py-2.5 text-neutral-600 hover:bg-pink-50 hover:text-red-600 rounded-xl text-sm font-medium transition-colors">
+                        <iconify-icon icon="solar:box-linear" class="text-lg"></iconify-icon> Products (CRUD)
+                    </a>
+                    <a href="#" class="flex items-center gap-3 px-4 py-2.5 text-neutral-600 hover:bg-pink-50 hover:text-red-600 rounded-xl text-sm font-medium transition-colors">
+                        <iconify-icon icon="solar:clipboard-list-linear" class="text-lg"></iconify-icon> Orders
+                    </a>
+                    <a href="#" class="flex items-center gap-3 px-4 py-2.5 text-neutral-600 hover:bg-pink-50 hover:text-red-600 rounded-xl text-sm font-medium transition-colors">
+                        <iconify-icon icon="solar:users-group-rounded-linear" class="text-lg"></iconify-icon> Users
+                    </a>
+                    <a href="#" class="flex items-center gap-3 px-4 py-2.5 text-neutral-600 hover:bg-pink-50 hover:text-red-600 rounded-xl text-sm font-medium transition-colors">
+                        <iconify-icon icon="solar:chat-round-dots-linear" class="text-lg"></iconify-icon> Comments
+                    </a>
+                </nav>
+
+                <!-- Main Content Area -->
+                <div class="flex-1 space-y-8">
+                    
+                    <!-- Order Management -->
+                    <div class="bg-white rounded-2xl border border-pink-100 shadow-sm overflow-hidden">
+                        <div class="px-6 py-4 border-b border-pink-100 bg-white flex justify-between items-center">
+                            <h3 class="font-semibold text-neutral-900 tracking-tight">Recent Orders</h3>
+                        </div>
+                        <div class="overflow-x-auto">
+                            <table class="w-full text-sm text-left">
+                                <thead class="text-xs text-neutral-500 bg-pink-50/50 uppercase font-medium">
+                                    <tr>
+                                        <th class="px-6 py-3">Order ID</th>
+                                        <th class="px-6 py-3">Customer</th>
+                                        <th class="px-6 py-3">Total</th>
+                                        <th class="px-6 py-3">Actions</th>
+                                    </tr>
+                                </thead>
+                                <tbody class="divide-y divide-pink-100">
+                                    <tr class="bg-white hover:bg-pink-50/30 transition-colors">
+                                        <td class="px-6 py-4 font-medium text-neutral-900">#ORD-9012</td>
+                                        <td class="px-6 py-4 text-neutral-600">Sarah Jenkins</td>
+                                        <td class="px-6 py-4 text-neutral-600">$145.00</td>
+                                        <td class="px-6 py-4 flex gap-2">
+                                            <button class="px-3 py-1.5 bg-white border border-pink-200 text-red-600 hover:bg-pink-50 rounded-lg text-xs font-medium transition-colors">Approve</button>
+                                            <button class="px-3 py-1.5 bg-white border border-red-200 text-red-600 hover:bg-red-50 rounded-lg text-xs font-medium transition-colors">Reject</button>
+                                        </td>
+                                    </tr>
+                                    <tr class="bg-white hover:bg-pink-50/30 transition-colors">
+                                        <td class="px-6 py-4 font-medium text-neutral-900">#ORD-9011</td>
+                                        <td class="px-6 py-4 text-neutral-600">Ahmed Ali</td>
+                                        <td class="px-6 py-4 text-neutral-600">$89.99</td>
+                                        <td class="px-6 py-4 flex gap-2">
+                                            <span class="px-3 py-1.5 bg-pink-50 text-red-600 rounded-lg text-xs font-medium">Approved</span>
+                                        </td>
+                                    </tr>
+                                </tbody>
+                            </table>
+                        </div>
+                    </div>
+
+                    <!-- User Moderation -->
+                    <div class="bg-white rounded-2xl border border-pink-100 shadow-sm overflow-hidden">
+                        <div class="px-6 py-4 border-b border-pink-100 bg-white flex justify-between items-center">
+                            <h3 class="font-semibold text-neutral-900 tracking-tight">User Moderation</h3>
+                        </div>
+                        <div class="overflow-x-auto">
+                            <table class="w-full text-sm text-left">
+                                <thead class="text-xs text-neutral-500 bg-pink-50/50 uppercase font-medium">
+                                    <tr>
+                                        <th class="px-6 py-3">User</th>
+                                        <th class="px-6 py-3">Email</th>
+                                        <th class="px-6 py-3">Status</th>
+                                        <th class="px-6 py-3 text-right">Actions</th>
+                                    </tr>
+                                </thead>
+                                <tbody class="divide-y divide-pink-100">
+                                    <tr class="bg-white hover:bg-pink-50/30 transition-colors">
+                                        <td class="px-6 py-4 font-medium text-neutral-900 flex items-center gap-2">
+                                            <div class="w-6 h-6 rounded-full bg-pink-100 flex items-center justify-center text-xs text-red-600">M</div>
+                                            Mike Ross
+                                        </td>
+                                        <td class="px-6 py-4 text-neutral-600">mike@example.com</td>
+                                        <td class="px-6 py-4"><span class="w-2 h-2 rounded-full bg-red-400 inline-block mr-1"></span> Active</td>
+                                        <td class="px-6 py-4 text-right">
+                                            <button class="px-3 py-1.5 bg-red-600 text-white hover:bg-red-700 rounded-lg text-xs font-medium transition-colors">Ban User</button>
+                                        </td>
+                                    </tr>
+                                    <tr class="bg-white hover:bg-pink-50/30 transition-colors opacity-60">
+                                        <td class="px-6 py-4 font-medium text-neutral-900 flex items-center gap-2">
+                                            <div class="w-6 h-6 rounded-full bg-neutral-100 flex items-center justify-center text-xs text-neutral-500">S</div>
+                                            Spam Bot 1
+                                        </td>
+                                        <td class="px-6 py-4 text-neutral-600">spam@fake.com</td>
+                                        <td class="px-6 py-4"><span class="w-2 h-2 rounded-full bg-neutral-400 inline-block mr-1"></span> Banned</td>
+                                        <td class="px-6 py-4 text-right">
+                                            <button class="px-3 py-1.5 bg-white border border-pink-200 text-red-600 hover:bg-pink-50 rounded-lg text-xs font-medium transition-colors">Unban</button>
+                                        </td>
+                                    </tr>
+                                </tbody>
+                            </table>
+                        </div>
+                    </div>
+
+                    <!-- Content Control (Comments) -->
+                    <div class="bg-white rounded-2xl border border-pink-100 shadow-sm overflow-hidden p-6">
+                        <h3 class="font-semibold text-neutral-900 tracking-tight mb-4">Content Control - Recent Reviews</h3>
+                        <div class="space-y-4">
+                            <div class="flex items-start justify-between gap-4 p-4 border border-pink-50 rounded-xl bg-pink-50/20">
+                                <div>
+                                    <div class="flex items-center gap-2 mb-1">
+                                        <span class="text-sm font-medium">User123</span>
+                                        <span class="text-xs text-neutral-400">on Vanilla Extract</span>
+                                    </div>
+                                    <p class="text-sm text-neutral-600">This product is terrible, don't buy it! [Spam link here]</p>
+                                </div>
+                                <button class="p-2 text-neutral-400 hover:text-red-600 hover:bg-red-50 rounded-lg transition-colors" title="Delete Comment">
+                                    <iconify-icon icon="solar:trash-bin-trash-linear" class="text-lg"></iconify-icon>
+                                </button>
+                            </div>
+                        </div>
+                    </div>
+
+                </div>
+            </div>
+        </div>
+    </section>
+
+
+</body></html>

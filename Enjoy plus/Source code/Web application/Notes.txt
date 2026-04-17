@@ -1,0 +1,44 @@
+Dark mode issues:
+some text appear in black color, make sure to change it to white to make user can read 
+some backgrounds color after change to dark mode still white, make sure to make it in dark 
+make sure to make the filters window expanded as the mode (dark for dark; light for light)
+shehab message box be in dark with white text for dark mode
+for admin panel; make sure to make it in dark mode for dark mode
+
+make sure to translate the admin panel page
+
+in admin panel; make sure to show the NavBar that shown in the home page 
+
+// after delete product, packages, and categories; make sure to remove it from DataBase
+
+make sure to add Top Brands in admin panel to can add brands for packages or products 
+
+// make sure to save the data after and before refresh the page; after refresh the page some information does not saved like change name, logout after login, ....
+// make sure to make everything after refresh as the same before refresh
+
+// admin add packages/products/ and categories but nothing appear
+
+make shehab ai bot icon static (does not moved to another place) but keep the animation as it is 
+
+// make sure anything that updated; update the data in data base (after update email; that does not changed, ....)
+
+// make sure to register before login, user should create account before login, user cannot login if he does not registered before.
+
+// make the login with google does not work except if user register with google 
+
+// make the social login work correctly; need api to open google accounts and login/register via google 
+
+// continue as a guest must open home page 
+
+for quick links:
+after user click on Home; must open home page
+after user click on Product; must open Product section in home page 
+after user click on Bundel Packages; must open Bundel Packages section in Home page
+after user click on My Orders; must open My Orders page
+after user click on Wishlist; must open Wishlist page
+
+remove TikTok reference
+
+// in settings; after try to type anything in fields; cannot type more than 1 character, after try to update password or set payment method; cannot take except 1 character or number or symbol, cursor change his location to somewhere that i does not know where 
+
+make packages or products card open there pages if user click on anywhere in the card, not click just on details button or show details. that mean if user click on anywhere in card; open package page or products page, dont click just on details buttons (remove these buttons)
