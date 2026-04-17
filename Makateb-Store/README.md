@@ -111,4 +111,4 @@ This project is open-sourced software licensed under the [MIT license](https://o
 
 ---
 
-<p align="center"> Developed by <b>Hamza</b> </p>
+<p align="center"> Developed by <b>Fawaz Allan</b> </p>

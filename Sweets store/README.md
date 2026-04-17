@@ -108,4 +108,4 @@ This project is licensed under the MIT License.
 
 ---
 
-<p align="center"> Crafting sweetness with <b>Enjoy Plus</b> </p>
+<p align="center"> Crafting sweetness with <b>Enjoy Plus</b> <br> Developed by <b>Fawaz Allan</b> </p>

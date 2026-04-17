@@ -33,7 +33,7 @@ Across these projects, I leverage industry-standard technologies to deliver robu
 ---
 
 ## 👨‍💻 Developed by
-**Hamza** - Passionate about building functional and beautiful web experiences.
+**Fawaz Allan** - Passionate about building functional and beautiful web experiences.
 
 ---
 © 2026 Web Projects Collection. All rights reserved.
