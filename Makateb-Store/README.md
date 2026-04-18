@@ -111,4 +111,11 @@ This project is open-sourced software licensed under the [MIT license](https://o
 
 ---
 
-<p align="center"> Developed by <b>Fawaz Allan</b> <br> 📧 [Gmail](mailto:fwzallan@gmail.com) | 💼 [LinkedIn](https://www.linkedin.com/in/fawaz-allan-188717247/) </p>
+## 👤 Developer Profile
+
+**Fawaz Allan**  
+Full-Stack Web Developer  
+*Expertise in Laravel 11, Vue.js 3, and Scalable E-commerce Solutions.*
+
+- 📧 [Gmail](mailto:fwzallan@gmail.com)
+- 💼 [LinkedIn](https://www.linkedin.com/in/fawaz-allan-188717247/)

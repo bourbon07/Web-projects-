@@ -32,10 +32,14 @@ Across these projects, I leverage industry-standard technologies to deliver robu
 
 ---
 
-## 👨‍💻 Developed by
-**Fawaz Allan** - Passionate about building functional and beautiful web experiences.
+## 👤 Developer Profile
 
-📧 [Gmail](mailto:fwzallan@gmail.com) | 💼 [LinkedIn](https://www.linkedin.com/in/fawaz-allan-188717247/)
+**Fawaz Allan**  
+AI Developer & Computer Vision Specialist  
+*Expertise in YOLO, Gemini, Flowise, and Transformer Architectures.*
+
+- 📧 [Gmail](mailto:fwzallan@gmail.com)
+- 💼 [LinkedIn](https://www.linkedin.com/in/fawaz-allan-188717247/)
 
 ---
 © 2026 Web Projects Collection. All rights reserved.
