@@ -108,4 +108,4 @@ This project is open-sourced software licensed under the [MIT license](https://o
 
 ---
 
-<p align="center"> Crafting sweetness with <b>Enjoy Plus</b> <br> Developed by <b>Fawaz Allan</b> </p>
+<p align="center"> Crafting sweetness with <b>Enjoy Plus</b> <br> Developed by <b>Fawaz Allan</b> <br> 📧 [Gmail](mailto:fwzallan@gmail.com) | 💼 [LinkedIn](https://www.linkedin.com/in/fawaz-allan-188717247/) </p>
