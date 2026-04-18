@@ -35,8 +35,8 @@ Across these projects, I leverage industry-standard technologies to deliver robu
 ## 👤 Developer Profile
 
 **Fawaz Allan**  
-AI Developer & Computer Vision Specialist  
-*Expertise in YOLO, Gemini, Flowise, and Transformer Architectures.*
+Full-Stack Web Developer  
+*Expertise in Laravel, React, Vue.js, and Scalable Web Ecosystems.*
 
 - 📧 [Gmail](mailto:fwzallan@gmail.com)
 - 💼 [LinkedIn](https://www.linkedin.com/in/fawaz-allan-188717247/)
